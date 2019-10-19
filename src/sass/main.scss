@@ -1,1 +1,18 @@
-@import "components/base"
+@charset 'UTF-8';
+
+// 1. Configuration and helpers
+@import "abstracts/variables", "abstracts/functions", "abstracts/mixins";
+
+// 2. Vendors
+
+// 3. Base stuff
+@import "base/typography", "base/reset", "base/base";
+
+// 4. Layout-related sections
+@import "layout/header", "layout/footer", "layout/grid", "layout/navigation";
+
+// 5. Components
+@import "components/button";
+
+// 6. Page-specific styles
+@import "pages/home";
