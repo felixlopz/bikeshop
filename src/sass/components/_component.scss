@@ -34,9 +34,21 @@
     font-size: 1.2rem;
   }
 
-  &__pice{
+  &__price{
     font-family: 'Ubuntu' , sans-serif;
     color: $color-secondary;
   }
 
+  @include respond (tablet){
+    flex: 0 1 20%;
+
+
+    &__name{
+      font-size: 1.4rem;
+    }
+
+    &__price{
+      font-size: 1.2rem;
+    }
+  }
 }
