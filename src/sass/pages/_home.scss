@@ -68,6 +68,10 @@
 		padding: 8rem 0;
 		margin: 0;
 
+		&__btn-box{
+			justify-content: flex-start;
+		}
+
 		&__secondary{
 			display: flex;
 			align-items: center;
