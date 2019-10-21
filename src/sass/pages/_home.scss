@@ -88,10 +88,15 @@
 	margin-top: 5rem;
 	padding: 2rem 0;
 
+	&__info{
+		margin-bottom: 3rem;
+	}
+
 	&__list{
 		display: flex;
 		flex-flow: row wrap;
 		list-style: none;
-		justify-content: center;
+		justify-content: space-between;
+		margin: -2rem auto;
 	}
 }

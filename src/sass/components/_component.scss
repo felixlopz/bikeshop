@@ -1,4 +1,42 @@
 .component{
   flex: 0 1 42%;
-  margin-right: 4%;
+  padding: 2rem 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  &__header{
+    width: 120px;
+    height: 100px;
+  }
+
+  &__body{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__info{
+    margin: 1rem 0;
+    flex: 1 0 auto;
+    text-align: center;
+  }
+
+  &__price, &__name{ 
+    display: block;
+  }
+
+  &__name{
+    font-family: 'Old Standard TT', serif;
+    margin-bottom: 0.5rem;
+    color: $color-primary;
+    font-size: 1.2rem;
+  }
+
+  &__pice{
+    font-family: 'Ubuntu' , sans-serif;
+    color: $color-secondary;
+  }
+
 }
