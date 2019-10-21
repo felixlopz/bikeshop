@@ -9,6 +9,6 @@ navToggler.addEventListener('click',  () => {
   navItems.forEach( (item , i) => {
     setTimeout ( () => {
       item.classList.toggle("navigation__item--close");
-    }, (i+1) * 100)
-  })
-})
+    }, (i+1) * 100);
+  });
+});

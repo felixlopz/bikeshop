@@ -15,9 +15,9 @@ const homeTextObserver = new IntersectionObserver ( (entries, homeTextObserver) 
     }else{
       headerElement.classList.remove("header--scrolled");
     }
-  })
+  });
 } , {
   rootMargin: "-250px 0px 0px 0px"
-})
+});
 
 homeTextObserver.observe(homeTextElement);
