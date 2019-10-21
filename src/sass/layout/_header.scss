@@ -23,6 +23,11 @@
 	@include respond (tablet){
 		background: transparent;
 		opacity: 1;
+		transition: background 0.3s ease-in;
+
+		&--scrolled{
+			background: rgba(0, 0, 0, 0.7) !important;
+		}
 
 		&__logo{
 			width: 12rem;
