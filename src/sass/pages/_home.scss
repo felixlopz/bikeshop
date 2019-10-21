@@ -30,6 +30,17 @@
 	@include respond (tablet){
 		height: 100vh;
 	}
+
+	@include respond (desktop){
+		&__heading{
+			font-size: 7rem;
+			max-width: 1100px;
+		}
+
+		&__paragraph{
+			font-size: 2.4rem;
+		}
+	}
 }
 
 .history{
@@ -41,6 +52,7 @@
 		&-picture-box{
 			width: 80%;
 			margin: 0 auto 2rem auto;
+			max-width: 350px;
 		}
 	}
 
@@ -107,6 +119,25 @@
 			}
 		}
 	}
+
+	@include respond (desktop){
+		&__btn-box{
+			margin: 4rem 0;
+		}
+
+		&__principal{
+			&-picture-box{
+				max-width: none;
+			}
+		}
+		&__secondary{
+			&-picture{
+				top: -20%;
+				max-width: 800px;
+				left: -200px;
+			}
+		}
+	}
 }
 
 .bikes{
@@ -136,9 +167,46 @@
 		padding: 8rem 0;
 		margin: 0;
 
+		&__info{
+			text-align: center;
+		}
+
 		&__picture-box{
 			max-width: 500px;
 			margin: 0 auto;
+		}
+	}
+
+	@include respond (desktop){
+		margin-top: 12rem;
+		&__gallery{
+			position: relative;
+			display: flex;
+			align-items: center;
+			height: 100%;
+			margin-top: 4rem;
+			justify-content: center;
+		}
+
+		&__picture-box{
+			max-width: 700px;
+		}
+
+		&__images{
+			position: absolute;
+			margin: 0;
+			right: 0;
+			width: 10%;
+			height: 70%;
+			flex-flow: column nowrap;
+		}
+		
+		&__image{
+			flex: 0 0 29.33%;
+			&:not(:last-child){
+				margin-bottom: 2%;
+				margin-right: 0 ;
+			}
 		}
 	}
 }
@@ -161,10 +229,15 @@
 
 	@include respond (tablet){
 		padding: 8rem 0;
+		padding-top: 0;
 		margin: 0;
 
 		&__list{
 			width: 100%;
+		}
+
+		&__info{
+			text-align: center;
 		}
 	}
 }

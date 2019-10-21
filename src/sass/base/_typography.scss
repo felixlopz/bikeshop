@@ -21,6 +21,16 @@
   &--primary{
     color: $color-primary;
   }
+
+  @include respond (tablet){
+    font-size: 3.6rem;
+  }
+
+  @include respond (desktop){
+    font-size: 6rem;
+    margin-bottom: 4.5rem;
+    line-height: 1;
+  }
 }
 
 .paragraph{
@@ -45,5 +55,19 @@
 
   &:not(:last-child){
     margin-bottom: 1.5rem;
+  }
+
+  @include respond (tablet){
+    font-size: 1.4rem;
+  }
+
+  @include respond (desktop){
+    font-size: 1.8rem;
+    line-height: 1.5;
+
+    &:not(:last-child){
+      margin-bottom: 3.6rem;
+    }
+  
   }
 }

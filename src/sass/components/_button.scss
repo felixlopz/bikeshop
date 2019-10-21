@@ -40,8 +40,15 @@
 
   @include respond (tablet){
     font-size: 1.2rem;
-
-
   }
+  @include respond (desktop){
+    font-size: 1.8rem;
 
+    &::before{
+      top: -5px;
+      left: -5px;
+      right: -5px;
+      bottom: -5px;
+    }
+  }
 }

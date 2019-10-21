@@ -6,7 +6,7 @@
 // 2. Vendors
 
 // 3. Base stuff
-@import "base/typography", "base/reset", "base/base";
+@import "base/typography", "base/reset", "base/base", "base/utilities";
 
 // 4. Layout-related sections
 @import "layout/header", "layout/footer", "layout/grid", "layout/navigation";

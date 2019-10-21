@@ -13,3 +13,29 @@
 .reverse{
 	flex-direction: row-reverse !important;
 }
+
+@include respond (tablet){
+	.row{
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	[class*="col-"]{
+		margin-left: 4%;
+		margin-right: 0;
+	}
+
+	.col-2-4{
+		flex: 0 0 44%;
+	}
+
+	.col-4{
+		float: 0 0 92%;
+	}
+}
+
+@include respond (desktop){
+	.row{
+		max-width: 1300px;
+	}
+}

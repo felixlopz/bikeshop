@@ -29,6 +29,7 @@
 
   &__name{
     font-family: 'Old Standard TT', serif;
+    font-weight: 700;
     margin-bottom: 0.5rem;
     color: $color-primary;
     font-size: 1.2rem;
@@ -41,14 +42,29 @@
 
   @include respond (tablet){
     flex: 0 1 20%;
-
-
     &__name{
       font-size: 1.4rem;
     }
 
     &__price{
       font-size: 1.2rem;
+    }
+  }
+
+  @include respond (desktop){
+
+    &__header{
+      width: 160px;
+      height: 120px;
+    }
+
+
+    &__name{
+      font-size: 1.8rem;
+    }
+
+    &__price{
+      font-size: 1.4rem;
     }
   }
 }
