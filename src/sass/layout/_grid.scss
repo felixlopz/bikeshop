@@ -1,6 +1,6 @@
 .row{
 	display: flex;
-	flex-flow: row nowrap;
+	flex-flow: row wrap;
 	flex: 0 1 auto;
 	padding: 0 1.5rem;
 }
@@ -8,4 +8,8 @@
 [class*="col-"]{
 	flex: 0 0 92%;
 	margin: 0 4%;
+}
+
+.reverse{
+	flex-direction: row-reverse !important;
 }
